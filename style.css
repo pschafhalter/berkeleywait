@@ -1,0 +1,35 @@
+.button {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 200px;
+    margin: auto;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.buttonimg {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
+
+#header {
+    color: #003262;
+    text-align: center;
+}
+
+body {
+    background-color: #FDB515;
+}
