@@ -3,16 +3,26 @@
 <head>
     <title>Berkeley Wait</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="style_changer.js"></script>
     <script type="text/javascript">
-        function play(){
+        function play() {
             var audio = new Audio("wait.wav")
             audio.play();
-             }
+            update_styles();
+         }
+
+         function update_styles() {
+            var header = document.getElementById("header");
+            var body = document.getElementById("body");
+            var obj = get_random_style_pairing();
+            header.style = obj.header_style;
+            body.style = obj.body_style;
+         }
     </script>
 </head>
-<body>
+<body id="body">
     <h1 id="header">Berkeley Wait</h1>
-    <img class="buttonimg" src="button.jpg" onclick="play()" alt="Wait">
-    <iframe width="0" height="0" src="https://www.youtube.com/embed/nI-6Svg1UVU?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+    <img class="buttonimg" src="button.jpg" onclick="play();" alt="Wait">
+    <iframe width="0" height="0" src="https://www.youtube.com/embed/nI-6Svg1UVU?rel=0&autoplay=1"&loop=1 frameborder="0" allowfullscreen></iframe>
 </body>
 </html>
