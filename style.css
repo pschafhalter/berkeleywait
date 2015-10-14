@@ -25,7 +25,13 @@
     cursor: pointer;
 }
 
-#header {
+.header {
+    display: table;
+    margin: auto;
+    cursor: pointer;
+}
+
+#top_header {
     color: #003262;
     text-align: center;
 }
