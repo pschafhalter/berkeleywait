@@ -6,7 +6,10 @@
     <script type="text/javascript" src="style_changer.js"></script>
     <script type="text/javascript">
         function play() {
-            var audio = new Audio("wait.wav")
+            var audio = new Audio("wait.wav");
+            audio.ended = function() {
+                delete audio;
+            };
             audio.play();
             update_styles();
          }
