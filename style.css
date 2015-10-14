@@ -30,6 +30,11 @@
     text-align: center;
 }
 
+#sub_header {
+    color: #003262;
+    text-align: center;
+}
+
 body {
     background-color: #FDB515;
     background-size: cover;
